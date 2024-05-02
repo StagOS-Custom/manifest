@@ -82,5 +82,7 @@
 <!-- GMS -->
 <project path="vendor/gms" name="vendor-gms-14" remote="gitlab-stag" />
 
+<!-- Certification -->
+<project path="vendor/certification" name="vendor_certification" remote="gitlab-stag" />
 
 </manifest>
