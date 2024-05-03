@@ -63,8 +63,10 @@
 
 <!-- Packages -->
 <project path="packages/apps/Horns" name="android_packages_apps_Horns" remote="stag" />
+<project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="stag" />
 <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="stag" />
 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="stag" />
+<project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="stag" />
 
 <!-- System Repos -->
 <project path="system/core" name="android_system_core" remote="stag" />
