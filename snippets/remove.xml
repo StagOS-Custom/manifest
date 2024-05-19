@@ -94,6 +94,7 @@
 <remove-project name="platform/frameworks/native" />
 <remove-project name="platform/hardware/interfaces" />
 <remove-project name="platform/hardware/libhardware" />
+<remove-project name="platform/packages/apps/Gallery2" />
 <remove-project name="platform/packages/apps/Launcher3" />
 <remove-project name="platform/packages/apps/Nfc" />
 <remove-project name="platform/packages/apps/Settings" />
