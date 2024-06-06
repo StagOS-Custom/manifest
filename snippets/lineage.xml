@@ -70,10 +70,10 @@
   <project path="system/logging" name="android_system_logging" remote="lineage" />
 
   <!-- Hardware repos -->
-  <!-- <project path="hardware/google/gchips" name="android_hardware_google_gchips" remote="lineage" />
+  <project path="hardware/google/gchips" name="android_hardware_google_gchips" remote="lineage" />
   <project path="hardware/google/graphics/common" name="android_hardware_google_graphics_common" remote="lineage" />
   <project path="hardware/google/pixel" name="android_hardware_google_pixel" remote="lineage" />
-  <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" remote="lineage" /> -->
+  <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" remote="lineage" />
   <project path="hardware/lineage/livedisplay" name="android_hardware_lineage_livedisplay" remote="lineage" />
   <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="lineage" />
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" remote="lineage" revision="lineage-20.0-caf" />
