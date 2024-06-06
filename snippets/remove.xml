@@ -74,6 +74,7 @@
 <remove-project name="platform/hardware/google/pixel-sepolicy" />
 
 <!--Extra -->
+<remove-project name="platform/external/dtc" />
 <remove-project name="platform/external/e2fsprogs" />
 <remove-project name="platform/external/exfatprogs" />
 <remove-project name="platform/external/libcxx" />

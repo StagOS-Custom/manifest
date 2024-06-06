@@ -31,6 +31,7 @@
 
   <!-- External -->
   <project path="external/bash" name="android_external_bash" remote="lineage" />
+  <project path="external/dtc" name="android_external_dtc" remote="lineage" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="lineage" />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="lineage" />
