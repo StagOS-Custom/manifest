@@ -52,10 +52,6 @@
 <!-- Sepolicy Repos -->
 <project path="device/lineage/sepolicy" name="android_device_stag_sepolicy" remote="stag" />
 
-<!-- External -->
-<project path="external/tinycompress" name="android_external_tinycompress" remote="stag" />
-<project path="external/libnl" name="android_external_libnl" remote="stag" />
-
 <!-- Hardware repos -->
 <project path="hardware/interfaces" name="android_hardware_interfaces" remote="stag" />
 <project path="hardware/libhardware" name="android_hardware_libhardware" remote="stag" />
