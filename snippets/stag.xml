@@ -81,6 +81,7 @@
 
 <!-- Stag Custom repos -->
 <project path="vendor/stag" name="android_vendor_stag" remote="stag" /> 
+<project path="vendor/SystemUIClocks" name="android_vendor_SystemUIClocks" remote="stag" />
 <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="gitlab-stag" />
 
 <!-- GMS -->
