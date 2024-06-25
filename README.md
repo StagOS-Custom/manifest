@@ -17,10 +17,10 @@ Then to sync up:
 ```
 repo sync -j$(nproc --all)
 ```
-or
+or for faster sync
 ```
 repo sync --force-sync -c --no-clone-bundle --no-tags -j$(nproc --all)
-``
+```
 
 Building for your device [Compiler Friendly]
 ---------------
