@@ -48,6 +48,7 @@
   <project path="external/tinycompress" name="android_external_tinycompress" remote="lineage" />
   <project path="external/vim" name="android_external_vim" remote="lineage" />
   <project path="external/mksh" name="android_external_mksh" remote="lineage" />
+  <project path="external/setupcompat" name="android_external_setupcompat" remote="lineage" />
 
   <!-- Sepolicy Repos -->
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="lineage" groups="qcom,pdk-qcom" />
