@@ -8,12 +8,8 @@
            fetch="https://github.com/" />
 
   <remote  name="stag"
-           revision="u14"
+           revision="staging/u14"
            fetch="https://github.com/StagOS/"  />
-
-  <remote  name="stag-beta"
-           revision="u14"
-           fetch="https://github.com/StagOS-Beta/"  />
 
   <remote  name="gitlab-stag"
            revision="u14"
@@ -23,22 +19,22 @@
            fetch="https://github.com/StagOS-Devices"
            revision="u14" />
 
-<!-- Remove the following projects as we are getting them from lineage/stag -->
-<include name="snippets/remove.xml" />
+<!-- Rootdir -->
+<project path="bionic" name="android_bionic" remote="stag" />
+<project path="bootable/recovery" name="android_bootable_recovery" remote="stag" />
 
-<!-- Build First -->
-<project path="build/make" name="android_build_make" remote="stag" >
-	<copyfile src="core/root.mk" dest="Makefile" />
-	<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-	<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-	<linkfile src="core" dest="build/core" />
-	<linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-	<linkfile src="target" dest="build/target" />
-	<linkfile src="tools" dest="build/tools" />
+<!-- Build -->
+<project path="build/make" name="android_build_make" groups="pdk" remote="stag">
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
 </project>
-<project path="build/soong" name="android_build_soong" remote="stag">
-	<linkfile src="root.bp" dest="Android.bp" />
-	<linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+<project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="stag">
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
 </project>
 
 <!-- Frameworks -->
@@ -46,40 +42,23 @@
 <project path="frameworks/base" name="android_frameworks_base" remote="stag" />
 <project path="frameworks/native" name="android_frameworks_native" remote="stag" />
 
-<!-- Core repos -->
-<project path="bionic" name="android_bionic" remote="stag" />
-<project path="bootable/recovery" name="android_bootable_recovery" remote="stag" />
-
 <!-- Sepolicy Repos -->
 <project path="device/lineage/sepolicy" name="android_device_stag_sepolicy" remote="stag" />
 
-<!-- Hardware repos -->
-<project path="hardware/stag/interfaces" name="android_hardware_stag_interfaces" remote="stag" />
-
 <!-- Packages -->
-<project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="stag" />
-<project path="packages/apps/Horns" name="android_packages_apps_Horns" remote="stag" />
-<project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="stag" />
-<project path="packages/apps/OpenDelta" name="android_packages_apps_OpenDelta" remote="stag" />
+<project path="packages/apps/OpenDelta" name="android_packages_apps_OpenDelta" remote="stag" revision="u14" />
 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="stag" />
-<project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="stag" />
-<project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="stag" />
-<project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="stag" />
+<project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="stag" revision="u14" />
+<project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="stag" revision="u14" />
 
 <!-- System Repos -->
 <project path="system/core" name="android_system_core" remote="stag" />
 <project path="system/sepolicy" name="android_system_sepolicy" remote="stag" />
 <project path="system/update_engine" name="android_system_update_engine" remote="stag" />
 
-<!-- Stag Custom repos -->
-<project path="vendor/stag" name="android_vendor_stag" remote="stag" /> 
-<project path="vendor/SystemUIClocks" name="android_vendor_SystemUIClocks" remote="stag" />
-<project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="gitlab-stag" />
-
-<!-- GMS -->
+<!-- Vendor -->
+<project path="vendor/stag" name="android_vendor_stag" remote="stag" />
 <project path="vendor/gms" name="vendor-gms-14" remote="gitlab-stag" />
-
-<!-- Certification -->
 <project path="vendor/certification" name="vendor_certification" remote="gitlab-stag" />
 
 </manifest>

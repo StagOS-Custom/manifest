@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+<!-- Rootdir -->
+<remove-project name="platform/bionic" />
+
+<!-- Bootable -->
+<remove-project name="platform/bootable/recovery" />
+
+<!-- Build -->
+<remove-project name="platform/build" />
+<remove-project name="platform/build/soong" />
+
 <!-- Device -->
 <remove-project name="device/amlogic/yukawa" />
 <remove-project name="device/amlogic/yukawa-kernel" />
@@ -117,7 +127,6 @@
 <!-- Packages -->
 <remove-project name="platform/packages/apps/EmergencyInfo" />
 <remove-project name="platform/packages/apps/Settings" />
-<remove-project name="platform/packages/apps/SettingsIntelligence" />
 <remove-project name="platform/packages/modules/adb" />
 <remove-project name="platform/packages/modules/Bluetooth" />
 <remove-project name="platform/packages/modules/common" />
@@ -125,19 +134,6 @@
 <remove-project name="platform/packages/modules/Wifi" />
 <remove-project name="platform/packages/services/Telecomm" />
 <remove-project name="platform/packages/services/Telephony" />
-<remove-project name="platform/packages/apps/Gallery2" />
-<remove-project name="platform/packages/apps/Launcher3" />
-<remove-project name="platform/packages/apps/ThemePicker" />
-
-<!-- Rootdir -->
-<remove-project name="platform/bionic" />
-
-<!-- Bootable -->
-<remove-project name="platform/bootable/recovery" />
-
-<!-- Build -->
-<remove-project name="platform/build" />
-<remove-project name="platform/build/soong" />
 
 <!-- System -->
 <remove-project name="platform/system/bpf"/>
