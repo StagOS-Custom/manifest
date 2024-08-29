@@ -43,6 +43,9 @@
 <project path="frameworks/base" name="android_frameworks_base" remote="stag" />
 <project path="frameworks/native" name="android_frameworks_native" remote="stag" />
 
+<!-- Hardware repos -->
+<project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="stag" />
+
 <!-- Sepolicy Repos -->
 <project path="device/lineage/sepolicy" name="android_device_stag_sepolicy" remote="stag" />
 
