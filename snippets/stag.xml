@@ -63,6 +63,7 @@
 
 <!-- External -->
 <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="pdk" remote="stag" />
+<project path="external/harfbuzz_ng" name="android_external_harfbuzz_ng" groups="pdk" remote="stag" />
 <project path="external/jemalloc_new" name="android_external_jemalloc_new" groups="pdk" remote="stag" />
 <project path="external/skia" name="android_external_skia" groups="pdk" remote="stag" />
 <project path="external/sqlite" name="android_external_sqlite" groups="pdk" remote="stag" />
