@@ -69,5 +69,6 @@
 <project path="external/libpng" name="android_external_libpng" groups="pdk" remote="stag" />
 <project path="external/skia" name="android_external_skia" groups="pdk" remote="stag" />
 <project path="external/sqlite" name="android_external_sqlite" groups="pdk" remote="stag" />
+<project path="external/vixl" name="android_external_vixl" groups="pdk" remote="stag" />
 
 </manifest>
