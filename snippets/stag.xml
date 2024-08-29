@@ -20,6 +20,7 @@
            revision="u14" />
 
 <!-- Rootdir -->
+<project path="art" name="android_art" groups="pdk" remote="stag" />
 <project path="bionic" name="android_bionic" remote="stag" />
 <project path="bootable/recovery" name="android_bootable_recovery" remote="stag" />
 
