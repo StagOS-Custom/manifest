@@ -87,6 +87,7 @@
 <remove-project name="platform/external/dtc" />
 <remove-project name="platform/external/e2fsprogs" />
 <remove-project name="platform/external/exfatprogs" />
+<remove-project name="platform/external/giflib" />
 <remove-project name="platform/external/gptfdisk" />
 <remove-project name="platform/external/harfbuzz_ng" />
 <remove-project name="platform/external/jemalloc_new" />
