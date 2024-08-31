@@ -57,6 +57,7 @@
 
 <!-- System Repos -->
 <project path="system/core" name="android_system_core" remote="stag" />
+<project path="system/memory/lmkd" name="android_system_memory_lmkd" groups="pdk" remote="stag" />
 <project path="system/sepolicy" name="android_system_sepolicy" remote="stag" />
 <project path="system/update_engine" name="android_system_update_engine" remote="stag" />
 
