@@ -67,6 +67,7 @@
 <project path="vendor/certification" name="vendor_certification" remote="gitlab-stag" />
 
 <!-- External -->
+<project path="external/AndroidSystemBlur" name="android_external_AndroidSystemBlur" groups="pdk" remote="stag" revision="master" />
 <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="pdk" remote="stag" />
 <project path="external/giflib" name="android_external_giflib" groups="pdk" remote="stag" />
 <project path="external/harfbuzz_ng" name="android_external_harfbuzz_ng" groups="pdk" remote="stag" />
