@@ -58,6 +58,7 @@
 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="stag" />
 <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="stag" revision="u14" />
 <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="stag" revision="u14" />
+<project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="stag-custom" />
 
 <!-- System Repos -->
 <project path="system/core" name="android_system_core" remote="stag" />
