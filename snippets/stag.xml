@@ -11,6 +11,10 @@
            revision="staging/u14"
            fetch="https://github.com/StagOS/"  />
 
+  <remote  name="stag-custom"
+           revision="staging/u14"
+           fetch="https://github.com/StagOS-Custom/" />
+
   <remote  name="gitlab-stag"
            revision="u14"
            fetch="https://gitlab.com/StagOS/"  />
@@ -65,6 +69,7 @@
 <project path="vendor/stag" name="android_vendor_stag" remote="stag" />
 <project path="vendor/gms" name="vendor-gms-14" remote="gitlab-stag" />
 <project path="vendor/certification" name="vendor_certification" remote="gitlab-stag" />
+<project path="vendor/custom-preference" name="vendor_custom-preference" remote="stag-custom" />
 
 <!-- External -->
 <project path="external/AndroidSystemBlur" name="android_external_AndroidSystemBlur" groups="pdk" remote="stag" revision="master" />
